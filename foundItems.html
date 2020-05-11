@@ -1,0 +1,10 @@
+ <ol><br><br><br>
+          <li ng-repeat="item in kontroler.items"><br>
+          Ime: {{item.name}}<br>
+          kratica: {{item.short_name}}<br>
+          opis: {{item.description}}<br>
+          mala porcija: {{item.price_small}}<br>
+          velika porcija: {{item.price_large}}<br>
+          <button ng-click="kontroler.onRemove({index: $index});">Don't want this one!</button>
+      </li>
+    </ol>
